@@ -1,0 +1,16 @@
+tambah file =
+    Migration : poster
+    model : poster 
+    controller :poster
+    StorePendaftaran
+    UpdatePendaftaran 
+    view index blade poster
+    tambah content poster di halaman utama
+Update =
+    route : poster index,delete, store
+    PpdbController 
+    PendaftaranController
+Update Fitur
+    view halaman utama
+    
+

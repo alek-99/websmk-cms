@@ -1,0 +1,53 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD Pabrikan">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Produk -->
+        <mxCell id="produk" value="Produk&#xa;----------------&#xa;PK ProdID&#xa;ProdName&#xa;QtyOnHand" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Komponen -->
+        <mxCell id="komponen" value="Komponen&#xa;----------------&#xa;PK CompID&#xa;CompName&#xa;Deskripsi" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Pemasok -->
+        <mxCell id="pemasok" value="Pemasok&#xa;----------------&#xa;PK SuppID&#xa;SuppName" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="700" y="250" width="180" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Buat -->
+        <mxCell id="buat" value="Buat&#xa;----------------&#xa;PK CompID&#xa;PK ProdID&#xa;JmlKomponen" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="180" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- CompSupp -->
+        <mxCell id="compsupp" value="CompSupp&#xa;----------------&#xa;PK CompID&#xa;PK SuppID" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Relations -->
+        <mxCell id="rel1" style="endArrow=none;" edge="1" parent="1" source="produk" target="buat">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel2" style="endArrow=none;" edge="1" parent="1" source="buat" target="komponen">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel3" style="endArrow=none;" edge="1" parent="1" source="komponen" target="compsupp">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel4" style="endArrow=none;" edge="1" parent="1" source="compsupp" target="pemasok">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
