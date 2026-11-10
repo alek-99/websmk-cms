@@ -154,7 +154,7 @@ Ikuti langkah berikut untuk menjalankan proyek di lingkungan lokal.
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/education-cms.git
+git clone https://github.com/alek-99/websmk-cms.git
 
 cd education-cms
 ```
